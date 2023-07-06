@@ -1,0 +1,102 @@
+@use "./globals" as *;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: $secondary-color;
+  background-color: $primary-color;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  gap: 2em;
+
+  header {
+    padding: 1em;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 9px;
+    #span {
+      font-size: 25px;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+    }
+    #score {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 80px;
+      letter-spacing: 1px;
+      border-radius: 10px;
+      background-color: white;
+      p:first-child {
+        font-weight: 600;
+        color: $primary-color;
+      }
+      p:last-child {
+        color: rgb(51, 47, 57);
+        font-size: 2em;
+        font-weight: 700;
+      }
+    }
+  }
+
+  #players {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    span {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  .play {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    #duoButton {
+      display: flex;
+      gap: 6em;
+      button:first-child {
+        border: 12px solid #fcd330;
+      }
+      button:last-child {
+        border: 12px solid $tertiary-color;
+      }
+    }
+
+    button {
+      font-size: 30px;
+      background: none;
+      width: 135px;
+      height: 135px;
+      border-radius: 50%;
+      background-color: $secondary-color;
+      cursor: pointer;
+      border: 12px solid #f45963;
+      transition: transform 0.25s ease-in-out;
+      &:hover {
+        transform: scale(0.97);
+      }
+    }
+  }
+}

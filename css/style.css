@@ -1,0 +1,98 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #ffffff;
+  background-color: #2777d8;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  gap: 2em;
+}
+main header {
+  padding: 1em;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 9px;
+}
+main header #span {
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+main header #score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 80px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background-color: white;
+}
+main header #score p:first-child {
+  font-weight: 600;
+  color: #2777d8;
+}
+main header #score p:last-child {
+  color: rgb(51, 47, 57);
+  font-size: 2em;
+  font-weight: 700;
+}
+main #players {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+main #players span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+main .play {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+main .play #duoButton {
+  display: flex;
+  gap: 6em;
+}
+main .play #duoButton button:first-child {
+  border: 12px solid #fcd330;
+}
+main .play #duoButton button:last-child {
+  border: 12px solid #61e786;
+}
+main .play button {
+  font-size: 30px;
+  background: none;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 12px solid #f45963;
+  transition: transform 0.25s ease-in-out;
+}
+main .play button:hover {
+  transform: scale(0.97);
+}
+
+/*# sourceMappingURL=style.css.map */
